@@ -1,0 +1,96 @@
+:root {
+  --color-primary: #101114;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Work Sans, Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-container {
+  background-color: var(--color-primary);
+  height: 100vh;
+  width: 100vw;
+  padding: 0px 15px;
+}
+
+.player-container {
+  max-width: 100%;
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.info h1 {
+  color: white;
+  font-size: 28px;
+  margin-top: 1rem;
+}
+
+.info h2 {
+  color: #B3B0B8;
+  font-size: 16px;
+  margin-top: 0.5rem;
+  margin-bottom: 25px;
+}
+
+.progress {
+  width: 100%;
+}
+
+.progress progress {
+  width: 100%;
+  height: 5px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: white;
+}
+progress::-webkit-progress-value {
+  color: #7f5af0;
+}
+progress::-moz-progress-bar {
+  background-color: white;
+}
+
+.progress .info {
+  color: #B3B0B8;
+  font-size:  12px;
+  margin-top: 0.5rem;
+}
+
+.commands {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.commands button + button {
+  margin-left: 1.5rem;
+}
+
+.time-info {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+button {
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 16px;
+  width: 13px;
+}

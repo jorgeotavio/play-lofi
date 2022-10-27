@@ -1,0 +1,8 @@
+ REWRITEENGINE ON
+    #for app in subdirectory
+    RewriteBase /play-lofi/
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
+    RewriteRule ^.*play-lofi/.* /play-lofi/index.html [L]
